@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: redshift_raw_airbnb
+    database: analytics
+    schema: raw_airbnb
+    tables:
+      - name: calendar
+      - name: detailed_listings
+      - name: detailed_reviews
+      - name: listings
+      - name: neighbourhoods
+      - name: reviews
