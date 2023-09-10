@@ -1,4 +1,4 @@
-{{ config(materialized="table", schema="bronze_airbnb") }}
+{{ config(materialized="table", schema="silver_airbnb") }}
 
 select distinct
     (host_id),
@@ -23,4 +23,4 @@ select distinct
     calculated_host_listings_count_entire_homes,
     calculated_host_listings_count_private_rooms,
     calculated_host_listings_count_shared_rooms
-from {{ source("redshift_raw_airbnb", "detailed_listings") }}
+from {{ ref("bronze_detailed_listings") }}
