@@ -2,12 +2,19 @@ version: 2
 
 sources:
   - name: redshift_raw_airbnb
+    description: A Redshift serverless instance with Rio de Janeiro's insideairbnb.com data.
     database: analytics
     schema: raw_airbnb
     tables:
       - name: calendar
+        description: Detailed calendar data
       - name: detailed_listings
+        description: Detailed listings data
       - name: detailed_reviews
+        description: Detailed review data
       - name: listings
+        description: Summary information and metrics for listings in Rio de Janeiro
       - name: neighbourhoods
+        description: Neighbourhood list for geo filter. Sourced from city or open source GIS files
       - name: reviews
+        description: Summary review data and listing id (to facilitate time based analytics and visualisations linked to a listing)
