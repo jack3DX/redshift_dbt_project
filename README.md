@@ -1,4 +1,4 @@
-This repository presents a solution for the fourth sprint of the MBA on Data Engineering of FIAP.
+### This repository presents a solution for the fourth sprint of the MBA on Data Engineering of FIAP.
 The main challenge is to develop a pipeline with a Modern Data Stack tool. The project blueprint is shown below:
 
 ![Project_blueprint](images/Arquitetura.png)
@@ -59,7 +59,7 @@ A machine learning model was developed to predict where are the best properties 
 
 The chosen algorithm was RidgeCV along with the Lasso Model. RidgeCV is a variant of Ridge regression that performs cross-validation to determine the optimal value of alpha. The RidgeCV class takes several parameters, including the range of alpha values to test, the number of folds for cross-validation, and the scoring metric to use. Cross-validation is a technique used to evaluate the performance of a machine learning model by splitting the data into several folds, training the model on each fold, and testing it on the remaining folds. The process is repeated several times, and the average performance is reported.
 
-TL;DR: We created a success measurement based on frequency and good ratings. Now the algorithm is analyzing what the most successful listings have in common.
+### TL;DR: We created a success measurement based on frequency and good ratings. Now the algorithm is analyzing what the most successful listings have in common.
 
 The model predicts that properties on South and strongly East are the best ones to have good and frequent reviews, which translates in frequent rents and successful listings in the platform. Also, some amenities like self check-in, instantly booked listings (the ones that do not need host's approval) and bed linens are very important. On the other hand, price may be ignored, which makes sense, since tourists won't bother to pay fair prices while on vacation in most of the cases (that's a personal opinion). The coefficients in the Lasso Model are shown below:
 
