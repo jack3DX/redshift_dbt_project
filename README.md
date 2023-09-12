@@ -47,7 +47,7 @@ And finally, the connection between dbt and Redshift could be created.
 
 ### Transformation and modelling
 
-A bit more about the transformation and modelling was written in the doc file. This session will be kept like this for now!
+A bit more about the transformation and modelling was written in the doc file. This section will be kept like this for now!
 
 ### Data analysis and visualization
 
